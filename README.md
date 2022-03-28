@@ -17,8 +17,8 @@ The `benchmarks!` macro accepts input with the following structure:
 
 ```
 benchmarks! {
-  test_name { /* test impl */ }
-  other_test_name { /* other test impl */ }
+  benchmark_name { /* benchmark impl */ }
+  other_benchmark_name { /* other benchmark impl */ }
 }
 ```
 
