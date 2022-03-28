@@ -1,4 +1,4 @@
-mod internals;
+mod internal;
 
 benchmarks! {
     left {}
