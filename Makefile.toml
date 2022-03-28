@@ -1,0 +1,21 @@
+[tasks.bench]
+install_crate = { crate_name = "cargo-criterion", binary = "cargo", test_arg = [
+  "criterion",
+  "--version",
+], min_version = "0.3.5" }
+command = "cargo"
+args = ["criterion"]
+
+[tasks.reset]
+script_runner = "@shell"
+script = '''
+if [ -d "target/criterion" ]; then
+  rm -r target/criterion
+fi
+'''
+
+[tasks.new]
+script_runner = "@shell"
+script = '''
+echo "mod internals;\n\nbenchmarks! {\n    left {}\n    right {}\n}" > ./benches/benchmark.rs
+'''

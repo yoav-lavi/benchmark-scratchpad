@@ -1,6 +1,6 @@
 # Benchmark Scratchpad
 
-A quick scratchpad for benchmarking
+A quick scratchpad for benchmarking Rust code
 
 ## Prerequisites
 
@@ -62,4 +62,3 @@ benchmarks! {
 - [cargo-make](https://github.com/sagiegurari/cargo-make)
 - [cargo-criterion](https://github.com/bheisler/cargo-criterion)
 - [criterion.rs](https://github.com/bheisler/criterion.rs)
-# benchmark-scratchpad
