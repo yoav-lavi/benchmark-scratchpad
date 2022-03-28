@@ -9,7 +9,7 @@ A quick scratchpad for benchmarking Rust code
 ## Instructions
 
 1. Edit [benches/benchmark.rs](benches/benchmark.rs)
-2. Run [cargo-make](https://github.com/sagiegurari/cargo-make) - `cargo make bench`
+2. Run `cargo make bench`
 
 ## `benchmarks!`
 
