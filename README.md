@@ -26,6 +26,13 @@ The [criterion.rs](https://github.com/bheisler/criterion.rs) `black_box` functio
 
 `criterion::black_box` stops the compiler from constant-folding away the whole function and replacing it with a constant.
 
+## Tasks
+
+- `cargo make bench` - runs the benchmark via `cargo-criterion`
+- `cargo make reset` - resets the criterion data for earlier benchmarks
+- `cargo make new` - returns [benches/benchmark.rs](benches/benchmark.rs) to the initial state
+- `cargo make save [FILENAME]` - saves the contents of [benches/benchmark.rs](benches/benchmark.rs) to `saved/[FILENAME].rs`
+
 ## Example
 
 ```rust 
@@ -51,12 +58,6 @@ benchmarks! {
 }
 ```
 
-## Tasks
-
-- `cargo make bench` - runs the benchmark via `cargo-criterion`
-- `cargo make reset` - resets the criterion data for earlier benchmarks
-- `cargo make new` - returns [benches/benchmark.rs](benches/benchmark.rs) to the initial state
-- `cargo make save [FILENAME]` - saves the contents of [benches/benchmark.rs](benches/benchmark.rs) to `saved/[FILENAME].rs`
 
 ## Uses 
 
