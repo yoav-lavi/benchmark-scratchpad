@@ -19,3 +19,14 @@ script_runner = "@shell"
 script = '''
 echo "mod internals;\n\nbenchmarks! {\n    left {}\n    right {}\n}" > ./benches/benchmark.rs
 '''
+
+[tasks.save]
+script_runner = "@shell"
+script = '''
+if [ -z "${@}" ]
+then
+  echo "please supply a filename"
+else
+  cp ./benches/benchmark.rs ./saved/"${@}".rs
+fi
+'''
