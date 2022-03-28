@@ -9,7 +9,7 @@ A quick scratchpad for benchmarking Rust code
 ## Instructions
 
 1. Edit [benches/benchmark.rs](benches/benchmark.rs)
-2. Run [cargo-make](https://github.com/sagiegurari/cargo-make) - `cargo make bench`
+2. Run `cargo make bench`
 
 ## `benchmarks!`
 
@@ -17,8 +17,8 @@ The `benchmarks!` macro accepts input with the following structure:
 
 ```
 benchmarks! {
-  test_name { /* test impl */ }
-  other_test_name { /* other test impl */ }
+  benchmark_name { /* benchmark impl */ }
+  other_benchmark_name { /* other benchmark impl */ }
 }
 ```
 
