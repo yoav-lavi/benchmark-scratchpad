@@ -17,7 +17,7 @@ fi
 [tasks.new]
 script_runner = "@shell"
 script = '''
-echo "mod internals;\n\nbenchmarks! {\n    left {}\n    right {}\n}" > ./benches/benchmark.rs
+echo "#[macro_use]\nextern crate internals;\n\nbenchmarks! {\n    left {}\n    right {}\n}" > ./benches/benchmark.rs
 '''
 
 [tasks.save]

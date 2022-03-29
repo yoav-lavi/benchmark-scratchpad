@@ -9,6 +9,7 @@ license = "MIT"
 
 [dev-dependencies]
 criterion = "0.3.5"
+benchmark_macro = { version = "0.1.0", path = "./crates/benchmark_macro" }
 
 [[bench]]
 name = "benchmark"

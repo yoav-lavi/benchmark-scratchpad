@@ -23,8 +23,13 @@ checksum = "d468802bab17cbc0cc575e9b053f41e72aa36bfa6b7f55e3529ffa43161b97fa"
 name = "benchmark-scratchpad"
 version = "0.1.0"
 dependencies = [
+ "benchmark_macro",
  "criterion",
 ]
+
+[[package]]
+name = "benchmark_macro"
+version = "0.1.0"
 
 [[package]]
 name = "bitflags"
@@ -459,9 +464,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "1.0.89"
+version = "1.0.90"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea297be220d52398dcc07ce15a209fce436d361735ac1db700cab3b6cdfb9f54"
+checksum = "704df27628939572cd88d33f171cd6f896f4eaca85252c6e0a72d8d8287ee86f"
 dependencies = [
  "proc-macro2",
  "quote",
